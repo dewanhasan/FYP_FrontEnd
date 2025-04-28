@@ -1,0 +1,45 @@
+/* Background Image Container */
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url("/BACKGROUND.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Centered Button Group over the car */
+  .button-group {
+    position: absolute;
+    top: 30%; /* 👈 Tweak this value to move buttons vertically */
+    left: 50%;
+    transform: translate(-40%, -60%);
+    display: flex;
+    gap: 25px;
+  }
+  
+  /* Button Styles */
+  .session-window {
+    background-color: rgba(183, 45, 45, 0.85);
+    color: rgb(203, 206, 152);
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 260px; /* 👈 Fixed width for uniform size */
+    height: 120px; /* Optional: consistent height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .session-window:hover {
+    background-color: rgba(42, 172, 25, 0.9);
+  }
+  

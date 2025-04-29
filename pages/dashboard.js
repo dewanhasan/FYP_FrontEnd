@@ -38,7 +38,7 @@ export default function Dashboard() {
       await fetch("http://localhost:5000/api/clear-session-graph", {
         method: "POST",
       });
-      console.log("✅ Previous session graph data cleared.");
+      console.log(" Previous session graph data cleared.");
     } catch (err) {
       console.error("Error clearing graph data:", err);
     }
@@ -63,7 +63,7 @@ export default function Dashboard() {
 
           // Start session if charging begins
           if (currentlyCharging && !sessionStarted) {
-            clearGraphData(); // 🔥 Clear old graph when new session starts
+            clearGraphData(); // Clear old graph when new session starts
             setSessionStarted(true);
             setIsCharging(true);
             const interval = setInterval(() => {
@@ -89,7 +89,7 @@ export default function Dashboard() {
         .catch((err) => console.error("Error fetching session data:", err));
     };
 
-    // Fetch immediately and every 5 seconds
+    // Fetch Data
     fetchData();
     const interval = setInterval(fetchData, 1000);
 
